@@ -64,7 +64,7 @@ def action_wrapper(hermes, intentMessage, conf):
         hermes.publish_end_session(intentMessage.session_id, "An error occured")
 
     current_session_id = intentMessage.session_id
-    result_sentence="Voici la Reponse à votre question"
+    result_sentence="Voici la Reponse a votre question"
     hermes.publish_end_session(current_session_id, result_sentence)
 
 
